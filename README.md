@@ -23,10 +23,10 @@ AWS, GCP, Firebase, Supabase. Managed cloud isn't where I work, and I'd rather t
 
 ### Things I learned the expensive way
 
-- A MongoDB TTL index on `Date.now()` does nothing. No error, no log. 127 GB, three weeks. 2 month of work lost. This isn't my first scar, but it's a nice one.
+- A MongoDB TTL index on `Date.now()` does nothing. No error, no log. 127 GB and two months of work, gone. Not my first scar — but a good one.
 - `kubectl top` under-reports by a factor of three. I went looking for headroom that was never there.
-- 137 restarts in 11 hours. Memory was fine. It wasn't an OOM — my own liveness probe was killing the service because it couldn't answer `/health` under batch load. an other week lost for my enjoyable. 
-
+- 137 restarts in 11 hours. Memory was fine. It wasn't an OOM — my own liveness probe was killing the service because it couldn't answer `/health` under batch load. Another week gone for my delight.
+  
 All of it, and the rest, is in [agent-skills](https://github.com/CARL-Bouvet/agent-skills).
 
 ---
