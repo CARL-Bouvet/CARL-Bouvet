@@ -28,6 +28,7 @@ AWS, GCP, Firebase, Supabase. Managed cloud isn't where I work, and I'd rather t
 - 137 restarts in 11 hours. Memory was fine. It wasn't an OOM — my own liveness probe was killing the service because it couldn't answer `/health` under batch load. an other week lost for my enjoyable. 
 
 All of it, and the rest, is in [agent-skills](https://github.com/CARL-Bouvet/agent-skills).
+
 ---
 
 Based in France. I work in English and French.
