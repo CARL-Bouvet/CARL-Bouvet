@@ -30,4 +30,8 @@ All of it, and the rest, is in [agent-skills](https://github.com/CARL-Bouvet/age
 
 ---
 
-Based in France. I work in English and French.
+Based in France. I work in English and French — I write English a good deal better than I speak it, so written and async collaboration suits me best.
+
+**Available for freelance work, remote.** Back ends and ingestion pipelines, MongoDB, self-hosted infrastructure. The write-up behind `resilient-ws` is [here](https://dev.to/carlbouvet/my-websocket-was-open-the-whole-time-it-just-stopped-sending-anything-140e).
+
+Reach me at **carlbouvetdev@gmail.com** or on [LinkedIn](https://www.linkedin.com/in/carl-bouvet-dev/).
