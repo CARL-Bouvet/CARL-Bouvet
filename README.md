@@ -1,6 +1,6 @@
 # Carl Bouvet
 
-Full-stack JavaScript engineer. Node/Bun back ends, Nuxt front ends, and the Docker Swarm and k3s clusters they actually run on. Seven years of JavaScript, working solo — which means I own the whole chain, from the query to the 3am incident.
+I connect AI agents to your software and your data streams, in TypeScript, and make it hold in production. Seven years of JavaScript, working solo — which means I own the whole chain, from the schema to the 3am incident.
 
 My public work lives in three repositories:
 
@@ -10,9 +10,9 @@ My public work lives in three repositories:
 
 ### What I actually do
 
-**WebSocket ingestion that survives production.** I ingest live trades from about ten crypto exchanges. Connecting was never the hard part — the hard part is the socket that stays open while silently delivering nothing. Application-level ping/pong on top of the transport, zombie detection, clean reconnect with no orphaned timers. I extracted that invariant and published it: **[resilient-ws](https://github.com/CARL-Bouvet/resilient-ws)** — including the case where the rule inverts, and why CCXT Pro does not catch this failure.
+**An AI model wired into real data, without handing out the keys.** Coati connects a language model to the page you are reading and to web search; the model asks for searches and pages through a small protocol the app parses and executes. The browser extension holds no secret: a local program, reachable only on `127.0.0.1` and paired with the extension through an authenticated handshake, keeps the keys and talks to Ollama, LM Studio, Claude or any OpenAI-compatible service. Page text reaches the model as data, and the assistant only reads — it never clicks, types, pays or signs in. Threat model and design decisions are published in the repository.
 
-**An AI model inside a product, without handing out the keys.** Coati's browser extension holds no secret. A local program, reachable only on `127.0.0.1` and paired with the extension through an authenticated handshake, keeps the keys and talks to Ollama, LM Studio, Claude or any OpenAI-compatible service. Installers for Linux, macOS and Windows, CI on all three, and the threat model and design decisions are published in the repository.
+**Live data that does not fail quietly.** I ingest live trades from about ten crypto exchanges. Connecting was never the hard part — the hard part is the socket that stays open while silently delivering nothing. Application-level ping/pong on top of the transport, zombie detection, clean reconnect with no orphaned timers. I extracted that invariant and published it: **[resilient-ws](https://github.com/CARL-Bouvet/resilient-ws)** — including the case where the rule inverts, and why CCXT Pro does not catch this failure.
 
 **Data at scale, and the ways it breaks.** MongoDB in depth: index-first with `.explain()`, grouped writes, the TTL that silently no-ops because the field isn't a `Date`, the engine cache that fights the container's memory cap. I've paid for each of those in production.
 
@@ -22,7 +22,7 @@ My public work lives in three repositories:
 
 ### Not my ground
 
-AWS, GCP, Firebase, Supabase. Managed cloud isn't where I work, and I'd rather tell you that now than learn it on your budget.
+Python, AWS, GCP, Firebase, Supabase. Managed cloud isn't where I work, and I'd rather tell you that now than learn it on your budget.
 
 ### Things I learned the expensive way
 
@@ -36,6 +36,6 @@ All of it, and the rest, is in [agent-skills](https://github.com/CARL-Bouvet/age
 
 Based in France. I work in English and French — I write English a good deal better than I speak it, so written and async collaboration suits me best.
 
-**Available for freelance work, remote.** Back ends and ingestion pipelines, AI model integration, MongoDB, self-hosted infrastructure. The write-up behind `resilient-ws` is [here](https://dev.to/carlbouvet/my-websocket-was-open-the-whole-time-it-just-stopped-sending-anything-140e).
+**Available for freelance work, remote.** Fixed-price projects of three to six weeks: an AI agent or assistant connected to your APIs, databases, documents or live data feeds — scope and price set before work starts. Also short fixed-price rescues of AI-written apps that break in production. The write-up behind `resilient-ws` is [here](https://dev.to/carlbouvet/my-websocket-was-open-the-whole-time-it-just-stopped-sending-anything-140e).
 
 Reach me at **carlbouvetdev@gmail.com** or on [LinkedIn](https://www.linkedin.com/in/carl-bouvet-dev/).
